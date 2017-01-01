@@ -1,28 +1,3 @@
-%%
-% Modificación de una plantilla de Latex para adaptarla al castellano.
-%%
-
-%%%%%%%%%%%%%%%%%%%%%
-% Thin Sectioned Essay
-% LaTeX Template
-% Version 1.0 (3/8/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original Author:
-% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
-% Vel (vel@latextemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
@@ -118,8 +93,9 @@
 \vspace{20 pt}
 Historia de las Matemáticas} % Subtitle
 
-\author{\textsc{Lothar Soto Palma\\
-lsotpal@correo.ugr.es} % Author
+\author{\textsc{Daniel López García\\
+Lothar Soto Palma\\
+Elena Toro Pérez} % Author
 \\{\textit{Universidad de Granada}}} % Institution
 
 \date{\today} % Date
@@ -130,22 +106,8 @@ lsotpal@correo.ugr.es} % Author
 	\maketitle
 	\tableofcontents
 	\listoffigures
-	\section{Items Relevantes}
-		\begin{itemize}
-			\item Modelo simple de aprendizaje
-			\item principio de la neurodinámica
-			\item Perceptron
-			\item Desarrollo de algoritmos de reglas simbólicas (Aprendizaje simbólico)
-			\item Aprendizaje estadístico
-			\item Aprendizaje basado en árboles de decisión
-			\item Aprendizaje basado en Reglas de asociación
-			\item Redes neuronales artificiales
-			\item Redes Bayesianas
-			\item Clasificación
-			\item Aprendizaje basado en reglas
-			\item Clustering
-			\item Deep Learning (final)
-		\end{itemize}
+
+\section{Introduccion}
 		Lista de temas a tratar:
 		\begin{itemize}
 			\item Antecedentes estadísticos
@@ -160,11 +122,14 @@ lsotpal@correo.ugr.es} % Author
 			\item Algoritmos de aprendizaje
 			\item Final con el estado actual del machine learning
 		\end{itemize}
-
-\section{Antecedentes estadísticos}
-\section{Máquina de aprendizaje de Turing}
-\section{Neural Network}
+\section{Historia General}
+\section{Temas 1 por 1}
+\subsection{Antecedentes estadísticos}
+\subsection{Máquina de aprendizaje de Turing}
+\subsection{Neural Network (Red neuronal)}
 ¿Cuándo?¿Quíen?¿Qué?¿Cómo?¿Porqué?
+Las redes neuronales son un conjunto de neuronas artificiales interconectadas, son un paradigma de aprendizaje y procesamiento automático bioinspirado en el sistema nervioso, que es objeto de estudio en el campo de la inteligencia artificial, pero ¿Cuándo surgió esta idea? y ¿Qué ideas han dado lugar a las redes neuronales tal y como son en la actualidad?.
+
 En el año 1943, el neurofisiólogo Warren McCulloch y el matemático Walter Pitts escribieron un documento en el que se describe como podrían funcionar las neuronas construyendo un modelo simple de red neuronal usando circuitos electrónicos. Para esto se basan en dos puntos de vista distintos, los procesos biológicos del cerebro y la aplicación de estas redes en la inteligencia artificial.
 
 En el año 1949 Donald Hebb en su obra The Organization of Behavior señala el hecho de que cada vez que se usa un camino de una red neuronal estas se fortalecen explicando que este concepto es fundamental para el aprendizaje de un ser humano y esto es conocido como regla de hebb o teoría de la asamblea celular. Este es un mecanísmo de plasticidad sináptica (que se encarga de la modulación de percepción se estimulos de una neurona) en el que el valor de una conexión sináptica se incrementa si las neuronas de ambos lados de dicha sinapsis se activan repetidas veces de forma simultanea, la teoria suele resumirsa a la frase: "Las células que disparan juntas, permanecerán conectadas", aunque esta no debe tomarse literalmente. Esta forma de aprendizaje se denomina aprendizaje de Hebb o Hebb Learning.
@@ -173,20 +138,54 @@ Hasta ahora los ordenadores no tenían la capacidad de simular una red neuronal 
 
 Marvin Lee Minsky y Dean Edmonds construyeron la primera máquina que ejecutaria una red neuronal haciendo uso del aprendizaje de Hebb anterior en el año 1951, aunque en entre los años 1954-1956 también hay otros autores que simulan una red neuronal sobre máquinas llamadas por entonces calculadoras.
 
- 
+Durante los proximos años se desarrolla el primer modelo de red neuronal aplicado a un problema real apodado Madaline o Multiple adaptative lineal elements, el problema fue eliminar el eco producido en las lineas telefónicas y esto se trataba de hacer a través de un filtro adaptativo. En los años 60 despues de que la arquitectura tradicional de Von Neumann entrase en escena, las redes neuronales
+se dejaron de lado. En el año 1969 Marvin Minsky y Seymour Papert publicaron un documento en el que se se dice que un computador no tenia la suficiente capacidad de procesamiento como para ejecutar una red neuronal extensa por mucho tiempo, a parte de que el perceptrón no era capaz de procesar los circuitos x-or.
 
-\section{Perceptron}
-\section{Máquinas y juegos}
+A partir de los 80 el interés en el área se reestablece y aparecen nuevos trabajos y documentos que pretendían hacer más funcionales las máquinas actuales haciendo bidireccionales las conexiones entre las neuronas que previamente fueron unidirecionales, además surgen nuevas ideas y conceptos que se apoyan en la base de las redes neuronales artificiales como las redes neuronales multicapa que extiende el problema introducido por Widrow y Hoff en el año 1952. 
+
+Actualmente el avance de este área se esta realizando a nivel de hardware más que del software, esto es debido a que se necesita mucha capacidad para procesar y la eficiencia de una red neuronal depende mucho del hardware usado, normalmente se construyen máquinas dedicadas a una tarea con un hardware específico para poder ejecutar la red neuronal necesaria como algunas que veremos en secciones posteriores.
+
+\subsection{Perceptron}
+\subsection{Máquinas y juegos}
+En esta sección mencionaremos los años y nombraremos las personalidades que han sido capaces de crear un programa o programas basandose en algoritmos de aprendizaje para que las máquinas sean capaces de aplicar las reglas del juego de una forma lógica y siempre con la intención de ganar.
+\subsubsection{Máquinas jugando a las Damas}
 En el año 1952 Arthur Samuel que acababa de unirse a un laboratorio de investigación de IBM escribe uno de los primeros programa de aprendizaje automático capaz de jugar a las damas. Se le denomina como un pionero en el campo de juegos de ordenador e inteligencia artificial. El programa de Samuel parece que fue el "primer programa" en el mundo capaz de aprender.
 
 El programa hacía uso de un árbol de juegos basandose en la estrategia minimax principalmente y usando la poda $\alpha\beta$ algoritmos que tratan de anticiparse a lo que hará el contrincante generando un árbol de acciones y podando quedandose con los caminos más probables y eligiendo aquel que obtenga un mayor porcentaje de victoria, pero luego diseñó varios mecanismos que le permitirían mejorar su programa, a estos mecanismos los denomino rote learning o aprendizaje por rutina que es básicamente una técnica que recuerda cada una de las posiciones que ya han sido visitadas basandose en la repeteción y una revaloración del estado de juego.
 
-\section{Nearest Neighbor}
-\section{Stanford cart y otros experimentos}
-\section{Neocognitron}
-\section{Backpropagation}
-\section{Algoritmos de aprendizaje}
-\section{Final con el estado actual del machine learning}
-\section{Referencias}
+\subsubsection{Máquinas jugando al Backgammon}
+En el año 1992, Gerry Tesauro desarrolla un programa de aprendizaje capaz de jugar al backgammon, basandose en conocimiento obtenido del juego. Esta aplicación del aprendizaje automático fue capaz de jugar casi tan bien como el campeón mundial en el juego. El aprendizaje estaba basado en un algoritmo abreviado TD o temporal difference learning, es un algortimo que trata de realizar predicciones basado en una combinación del método de Monte Carlo y la programación dinámica.
 
+\subsubsection{Máquinas jugando al Ajedrez}
+La supercomputadora Deep Blue instalada el año 1996 y desarrollada por IBM era capáz de jugar al ajedrez, lo novedoso de esto es que fue la primera máquina que consiguió vencer una partida al vigente campeón del mundo Gary Kasparov en un encuentro de 6 partidas realizado el mismo año. Sin embargo deep blue no fue capaz de ganar el encuentro debido a que Kasparov gano 4 de los 6 y empató los otros 2. En el año 1997 esta máquina tuvo una considerable mejora pasandose a llamar Deeper Blue que volvio a jugar contra aún vigente campeón del mundo Kasparov de nuevo en un encuentro a 6 partidas donde esta vez ganó Deeper blue con 3 victorias 2 derrotas y 1 empate.
+
+\subsubsection{Máquinas jugando al go}
+En el año 2015 Google DeepMind de Londres desarrolla un programa de ordenador llamado AlphaGo capaz de jugar al juego Go. Que resulta ser el primer programa que juega a ese juego en derrotar una persona profesional en un tablero de 19x19. El juego Go es considerado mucho más dificil de tratar computacionalmente que otros juegos como el ajedrez debido a que se tiene una gran cantidad de opciones y por tanto un gran árbol de decisión generado. Esto hace que los típicos algoritmos como la poda $\alpha\beta$ y otros métodos de búsqueda sean difíciles de usar, la capacidad de aprendizaje del programa se basa en una red neuronal que usa deep learning. El deep learning es una rama del machine learning que toma un conjunto de algoritmos que intentan obtener un modelo de abstracciones sobre los datos.
+
+\subsection{Nearest Neighbor}
+\subsection{Stanford cart y otros experimentos}
+\subsection{Neocognitron}
+\subsection{Backpropagation}
+\subsection{Algoritmos de aprendizaje}
+\subsection{Final con el estado actual del machine learning}
+Esto va a ser una recopilación de los finales que encontreis para cada área.
+\begin{thebibliography}{9}
+
+ \bibitem{Timeline}
+ \url{https://en.wikipedia.org/wiki/Timeline_of_machine_learning}
+
+\bibitem{standford1}
+	\textbf{Neural Networks},
+  \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history2.html}
+ \bibitem{standford2}
+ 	\textbf{Neural Networks},
+ \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html}
+ \bibitem{wikiNN1}
+ 	\textbf{Neural Networks},
+ \url{https://en.wikipedia.org/wiki/Artificial_neural_network}
+ \bibitem{marvinminsky}
+ 	\textbf{Neural Networks},
+ \url{https://en.wikipedia.org/wiki/Marvin_Minsky}
+
+\end{thebibliography}
 \end{document}
