@@ -1,0 +1,24 @@
+En 1957, el psicólogo \textbf{Frank Rosenblatt} desarrolló un modelo simple de neurona basado en la neurona de McCulloch y Pitts
+(unidad de cálculo que intenta modelar el comportamiento de una neurona "natural", similares a las que constituyen el cerebro humano)
+y en una regla de aprendizaje basada en la corrección del error. A este modelo le llamó Perceptrón.
+
+
+
+
+
+Una de las características que más interés despertó de este modelo fue su capacidad de aprender a reconocer patrones.
+
+
+
+El Perceptrón está constituido por un conjunto de sensores de entrada que reciben los patrones de entrada a reconocer o clasificar y
+una neurona de salida que se ocupa de clasificar dichos patrones de entrada en dos clases, según que la salida de la misma sea 1 (activada) o 0
+(desactivada).
+
+
+
+Sin embargo, dicho modelo tenía muchas limitaciones, como por ejemplo, no es capaz de aprender la función lógica XOR.
+
+
+
+Tuvieron que pasar unos años hasta que se propusiera la regla de aprendizaje de retropropagación del error para demostrarse que
+el Perceptrón multicapa es un aproximador universal.
