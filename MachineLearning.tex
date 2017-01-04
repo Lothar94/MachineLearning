@@ -108,29 +108,8 @@ Elena Toro Pérez} % Author
 	\maketitle
 	\tableofcontents
 	\listoffigures
-
+	\newpage
 \section{Introduccion}
-		Lista de temas a tratar:
-		\begin{itemize}
-			\item Antecedentes estadísticos
-			\item Máquina de aprendizaje de Turing
-			\item Neural Network
-			\item Perceptron
-			\item Máquinas y juegos
-			\item Nearest Neighbor
-			\item Stanford cart y otros experimentos
-			\item Neocognitron
-			\item Backpropagation
-			\item Algoritmos de aprendizaje
-			\item Final con el estado actual del machine learning
-		\end{itemize}
-				
-\section{Historia General}
-
-\newpage
-
-\section{Temas 1 por 1}
-\subsection{Introducción}
 \textbf{Machine learning} es una disciplina científica del ámbito de la Inteligencia Artificial que crea sistemas que aprenden automáticamente.
 
 Pero, ¿qué significan las palabras aprender y automáticamente, en este contexto?
@@ -191,34 +170,83 @@ Por tanto, la predicción sería: \textit{Si los clientes que tienen estas carac
 
 Si el departamento de marketing tuviera esta información, podría proponerles a dichos clientes un cambio de plan de tarificación o podría revisar por qué han llamado al servicio de atención al cliente para intentar mantenerlos.
 \end{shaded}
+\section{Historia General}
 
+\newpage
 
+\section{Antecedentes estadísticos}
+\section{Máquina de aprendizaje de Turing}
+\textbf{Alan Turing} (1912-1954) fue un matemático, criptógrafo, filósofo y un teórico de la computación que, además de trabajar en el equipo que descifró los códigos Enigma de Alemania, fue un pionero en el campo de la inteligencia artificial publicando uno de los primeros trabajos sobre esta materia.
 
+En \textbf{1950}, Alan Turing publicó uno de sus artículos más importantes para la revista \textit{Mind} (y que está considerado como una de las piedras angulares de la inteligencia artificial), \textit{Computing Machinery and Intelligence}, donde propuso un experimento: \textbf{el Test de Turing}.
 
+El Test de Turing se basa en una hipótesis positivista que parte del principio de que "si una máquina se comporta en todos los aspectos como inteligente, entonces, dicha máquina debe ser inteligente".
 
+El artículo de Turing comenzaba con una frase que era toda una declaración de intenciones de lo que evaluaría el test:
+\begin{shaded}
+"Propongo considerar la siguiente cuestión: ¿Pueden pensar las máquinas?"
+\end{shaded}
 
+Por lo que el resultado que se obtiene de este test es intentar medir si una máquina puede ser inteligente con un método que, aún hoy, sigue estando vigente.\\
 
+La incógnita sobre la capacidad de las máquinas de pensar tiene una larga historia, esta se divide entre las perspectivas materialista y dualista de la mente.
 
-\subsection{Antecedentes estadísticos}
-\subsection{Máquina de aprendizaje de Turing}
-\subsection{Neural Network (Red neuronal)}
-¿Cuándo?¿Quíen?¿Qué?¿Cómo?¿Porqué?
-Las redes neuronales son un conjunto de neuronas artificiales interconectadas, son un paradigma de aprendizaje y procesamiento automático bioinspirado en el sistema nervioso, que es objeto de estudio en el campo de la inteligencia artificial, pero ¿Cuándo surgió esta idea? y ¿Qué ideas han dado lugar a las redes neuronales tal y como son en la actualidad?.
+Veamos algunos antecedentes al Test de Turing:
+\begin{itemize}
+    \item \textbf{René Descartes} tuvo ideas similares a la prueba de Turing en su texto \textit{Discurso del Método} de \textbf{1637} donde escribió: "\textit{Cuántos autómatas diferentes o máquinas móviles se pueden construir por la industria del hombre […] Podemos comprender con facilidad el hecho de que una máquina sea diseñada para pronunciar palabras, incluso responder ante acciones tangibles que produzcan un cambio en sus órganos; por ejemplo, si se le tocara de una manera particular no preguntaría qué le queremos decir; si se le toca en otra parte puede decir que se le está lastimando entre otras cosas. Pero nunca sucede que pueda ordenar su habla en distintas maneras para responder apropiadamente ante todo lo que se diga en su presencia, de la misma manera que la clase más baja de humanos puede hacerlo.}"
+    
+    Descartes reconoce que los autómatas son capaces de reaccionar ante interacciones humanas, pero argumenta que tal autómata carece de la capacidad de responder adecuadamente ante lo que se diga en su presencia, de la misma manera en la que un humano podría.
+    
+    Por lo tanto, Descartes abre las puertas para la prueba de Turing al identificar la insuficiencia de una respuesta lingüística apropiada, lo cual separa al humano del autómata. Descartes no llega a considerar que una respuesta lingüística apropiada puede ser producida por un autómata del futuro y, por lo tanto, no propone el test de Turing como tal, aunque ya razonó los criterios y el marco conceptual.
+    
+    \item \textbf{Denis Diderot} también planteó, en su \textit{Pensées philosophiques}, un criterio de la prueba de Turing: "\textit{Si se encuentra un loro que puede responder a todo, se le consideraría un ser inteligente sin duda alguna.}"
+    
+    Aunque esto no signifique del todo que él esté de acuerdo con el posterior Test de Turing, sí muestra que ya era un argumento común usado por los materialistas de la época.
+    
+    \item En \textbf{1936}, el filósofo \textbf{Alfred Ayer} consideraba la pregunta filosófica típica sobre otras mentes: "\textit{¿Cómo sabemos que otras personas experimentan el mismo nivel de conciencia que nosotros?.}"
+    
+    En su libro \textit{Lenguaje, Verdad y Lógica}, Ayer propuso un método para distinguir entre un hombre consciente y una máquina inconsciente: "\textit{El único argumento que tengo para asegurar que, lo que parece ser consciente, no es un ser consciente sino un muñeco o una máquina, es el hecho de que falle en las pruebas empíricas por medio de las cuales se determina la presencia o ausencia de la conciencia}". O, lo que es lo mismo, "\textit{algo no está consciente si reprueba una prueba de consciencia}".
+    
+    Esta es una propuesta muy similar a la prueba de Turing, aunque esta se enfoca en la conciencia en vez de en la inteligencia. Además se desconoce si Turing estaba familiarizado con el clásico filosófico de Ayer.\\ 
+\end{itemize}
 
-En el año 1943, el neurofisiólogo Warren McCulloch y el matemático Walter Pitts escribieron un documento en el que se describe como podrían funcionar las neuronas construyendo un modelo simple de red neuronal usando circuitos electrónicos. Para esto se basan en dos puntos de vista distintos, los procesos biológicos del cerebro y la aplicación de estas redes en la inteligencia artificial.
+\textbf{¿En qué consistía el Test de Turing?} El Test de Turing se basaba en el Juego de la Imitación, una prueba en la que se ubicaban en una habitación un \textbf{hombre} y a una \textbf{mujer} frente a terminales que tuviesen algún sistema de comunicación (teletipos en los años 50).
 
-En el año 1949 Donald Hebb en su obra The Organization of Behavior señala el hecho de que cada vez que se usa un camino de una red neuronal estas se fortalecen explicando que este concepto es fundamental para el aprendizaje de un ser humano y esto es conocido como regla de hebb o teoría de la asamblea celular. Este es un mecanísmo de plasticidad sináptica (que se encarga de la modulación de percepción se estimulos de una neurona) en el que el valor de una conexión sináptica se incrementa si las neuronas de ambos lados de dicha sinapsis se activan repetidas veces de forma simultanea, la teoria suele resumirsa a la frase: "Las células que disparan juntas, permanecerán conectadas", aunque esta no debe tomarse literalmente. Esta forma de aprendizaje se denomina aprendizaje de Hebb o Hebb Learning.
+En otra habitación, estando aislado, se encontraba un sujeto bajo estudio que actuaba como \textbf{interrogador}. Este último debía averiguar quién era el hombre y quién era la mujer, simplemente, con preguntas en lenguaje natural (escribiendo en un lenguaje que todos entendían).
 
-Hasta ahora los ordenadores no tenían la capacidad de simular una red neuronal pero a partir de los años 50, estos obtienen mayor capacidad y es Nathanial Rochester de los laboratorios de investigación de IBM el que intento por primera vez simular pero fue un primer intento fallido.
+El objetivo del interrogador era descubrir quién era la mujer y quién era el hombre, mientras que el de los otros dos era convencer al interrogador de que son la mujer.
 
-Marvin Lee Minsky y Dean Edmonds construyeron la primera máquina que ejecutaria una red neuronal haciendo uso del aprendizaje de Hebb anterior en el año 1951, aunque en entre los años 1954-1956 también hay otros autores que simulan una red neuronal sobre máquinas llamadas por entonces calculadoras.
+Turing proponía realizar un cambio en este juego: coger a uno de los dos sujetos y sustituirlo por una \textbf{máquina}. Así, Turing cambiaba el objetivo de reconocer el sexo por el de reconocer la máquina.
 
-Durante los proximos años se desarrolla el primer modelo de red neuronal aplicado a un problema real apodado Madaline o Multiple adaptative lineal elements, el problema fue eliminar el eco producido en las lineas telefónicas y esto se trataba de hacer a través de un filtro adaptativo. En los años 60 despues de que la arquitectura tradicional de Von Neumann entrase en escena, las redes neuronales
-se dejaron de lado. En el año 1969 Marvin Minsky y Seymour Papert publicaron un documento en el que se se dice que un computador no tenia la suficiente capacidad de procesamiento como para ejecutar una red neuronal extensa por mucho tiempo, a parte de que el perceptrón no era capaz de procesar los circuitos x-or.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.52\textwidth]{testdeturing.PNG}
+\caption{Test de Turing}
+\label{Test de Turing}
+\end{figure}
 
-A partir de los 80 el interés en el área se reestablece y aparecen nuevos trabajos y documentos que pretendían hacer más funcionales las máquinas actuales haciendo bidireccionales las conexiones entre las neuronas que previamente fueron unidirecionales, además surgen nuevas ideas y conceptos que se apoyan en la base de las redes neuronales artificiales como las redes neuronales multicapa que extiende el problema introducido por Widrow y Hoff en el año 1952. 
+ La finalidad de estos cambios era hacer el juego lo más justo posible.
+ \begin{enumerate}
+     \item Lo primero, era que no tenía que consistir en un concurso de engaños, por lo que uno de los implicados no tendría por qué aparentar ser otra cosa.
+     \item Otro detalle es que a Turing poco le importaba si el ordenador empleaba trucos preestablecidos para eludir o manipular las respuestas (por ejemplo, equivocándose en preguntas aritméticas o tardando más tiempo del necesario en responderlas). Suponía que el interrogador también las empleaba para reconocerle, así que lo importante era lo que resultaba del juego, no los métodos que se empleaban para jugar ni los mecanismos internos de razonamiento, que, entre otras cosas, también eran desconocidos en el ser humano.
+ \end{enumerate}
 
-Actualmente el avance de este área se esta realizando a nivel de hardware más que del software, esto es debido a que se necesita mucha capacidad para procesar y la eficiencia de una red neuronal depende mucho del hardware usado, normalmente se construyen máquinas dedicadas a una tarea con un hardware específico para poder ejecutar la red neuronal necesaria como algunas que veremos en secciones posteriores.
+Dado que el interrogador era humano, la máquina debería ser capaz de responder, inteligentemente, a cualquiera de las cuestiones que se le planteasen. Si la máquina era lo suficientemente hábil, el interrogador no podría distinguir quién era la máquina y quién el ser humano.
+
+\begin{shaded}
+Pero, "¿puede una máquina responder con un lenguaje natural a cualquier pregunta planteada por el interrogador?" "¿Puede pensar una máquina?"
+\end{shaded}
+
+Esas son las grandes preguntas que Turing plantea en este experimento. Lógicamente, salvo que una máquina emita sonidos que imiten la voz humana, la mejor manera de realizar la prueba es mediante lenguaje escrito y evaluar, únicamente, la inteligencia del oponente y la "humanidad" de las respuestas obtenidas a las preguntas planteadas.
+
+Para que una máquina pudiese pasar el Test de Turing, ésta tendría que ser capaz de realizar las tareas para las que fue programada y, además, aprender por sí misma a realizar otras funciones.
+
+Se dice que una máquina podría pasar el Test de Turing cuando el interrogador no lograra reconocerlo en un número significativo de ocasiones.
+
+Hoy en día, estamos acostumbrados a ver algunos mecanismos que se apoyan en el Test de Turing, por ejemplo, los \textit{Captchas} (\textit{Completely Automated Public Turing Test to tell Computers and Humans Apart}) que aunque no son un test de Turing puro, se utilizan en muchas páginas web para evitar que procesos automatizados puedan registrar usuarios falsos o escribir mensajes de spam.
+
+\section{El problema de la Clasificación}
+En el aprendizaje automático y la estadística en problema de las clasificación consiste en identificar un conjunto de subconjuntos de miembros de una población basandose en un conjunto de entrenamiento que contiene instancias que ya son conocidas. La clasificación es un ejemplo de reconocimiento de patrones en una población, y algunos de sus algoritmos más importantes han surgido a lo largo del tiempo y han sido un referente para algoritmos posteriores. En esta sección vamos a tratar
 
 \subsection{Perceptron}
 Una de las características más significativas de las redes neuronales es su capacidad para aprender a partir de alguna fuente de información interactuando con su entorno.
@@ -311,31 +339,140 @@ El algoritmo de aprendizaje del perceptrón consiste en lo siguiente:
     \item El algoritmo finaliza cuando no haya más puntos mal clasificados.
 \end{enumerate}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{ejemploPerceptron.PNG}
+\caption{Ejemplo Perceptron}
+\label{Ejemplo Perceptron}
+\end{figure}
+ 
+\subsection{Nearest Neighbor}
+El algoritmo de clasificación \textbf{K-Nearest Neighbour (k-NN)} o \textbf{K-Vecino más Cercano} es uno de los métodos de clasificación más fundamentales y sencillos, y debería ser una de las primeras opciones para un estudio de clasificación cuando hay poco o ningún conocimiento previo sobre la distribución de los datos.
 
+Este algoritmo de clasificación se desarrolló debido a la necesidad de realizar análisis discriminantes (que es una técnica estadística capaz de decirnos qué variables permiten diferenciar distintos grupos y cuántas de estas variables son necesarias para alcanzar la mejor clasificación posible) cuando las estimaciones paramétricas fiables de las densidades de probabilidad son desconocidas o difíciles de determinar.
 
+En 1951, \textbf{Fix y Hodge} introdujeron este método no paramétrico para la clasificación de patrones, conocido desde aquel entonces como la regla del k-vecino más cercano.
 
+Pero no fue hasta el año \textbf{1967} cuando se tuvo constancia de este método y se resolvieron algunas de las propiedades formales de dicho algoritmo. Por ejemplo, se demostró que para $k = 1$ y $n \rightarrow \infty$ el error de clasificación de este algoritmo está delimitado por dos veces la tasa del error de Bayes \textit{(Cover \& Hart, 1967)}.
 
-\subsection{Máquinas y juegos}
+Por ello, y de manera resumida, se dice que en 1967, Fix \& Hodge desarrollan el algoritmo \textbf{Nearest Neighbour} o \textbf{Vecino más Cercano}.
+
+Este hito está considerado como el nacimiento del \textit{campo del reconocimiento de patrones} o \textit{pattern recognition} en computadores.
+
+Una vez que se establecieron en 1967 tales propiedades formales, se siguió una larga línea de investigación incluyendo nuevos enfoques de rechazo \textit{(Hellman, 1970)}, refinamientos con respecto a la tasa de error de Bayes \textit{(Fukunaga y Hostetler, 1975)}, enfoques basados en la distancia \textit{(Dudani, 1976; Bailey y Jain, 1978)}, soft computing \textit{(Bermejo y Cabestany, 2000)} y métodos difusos \textit{(Jozwik, 1983; Keller et al., 1985)}.
+
+Los primeros programas capaces de reconocer patrones fueron diseñados en base a este algoritmo.
+
+Dicho algoritmo se basa en:
+\begin{itemize}
+    \item \underline{El aprendizaje basado en casos}: extracción de información de un conjunto de datos conocidos para clasificar nuevos o agrupar existentes.
+    \item \underline{El razonamiento basado en casos}: imitación del sentido común humano a través de experiencias pasadas y solución de problemas presentes con analogías de problemas pasados.
+    \item \underline{Métodos basados en vecindad y de medición de distancia}.
+\end{itemize}
+
+Las aplicaciones más importantes de este algoritmo son:
+\begin{enumerate}
+    \item Escalamiento de gráficos evitando la menor pérdida de píxeles.
+    \item Sistemas de GPS actuales.
+    \item Reconocimiento de rostros.
+\end{enumerate}
+
+\textbf{¿Cómo funciona k-NN?}
+Parte de la idea de que una nueva muestra será clasificada en la clase a la cual pertenezcan la mayor cantidad de vecinos más cercanos (del conjunto de entrenamiento más cercano) a esta.
+
+Es decir, cuando se le da un nuevo objeto al programa, éste lo compara con los datos del conjunto de entrenamiento y clasifica el objeto con el vecino más cercano o con el objeto más similar en la memoria.
+
+Veamos un ejemplo del funcionamiento de esta regla de clasificación:
+\begin{shaded}
+Representamos 12 muestras pertenecientes a dos clases distintas: la Clase 1 está formada por 6 cuadrados de color azul y la Clase 2 está formada por 6 círculos de color rojo.
+
+Seleccionamos tres vecinos, es decir, $k = 3$.
+
+De los $3$ vecinos más cercanos a la muestra $x$ (representada en la figura por una cruz) uno de ellos pertenece a la Clase 1 y los otros dos a la Clase 2.
+
+Por tanto, la regla $3-NN$ asignará la muestra $x$ a la Clase 2.
+\end{shaded}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{ejemploKNN.JPG}
+\caption{Ejemplo kNN}
+\label{Ejemplo kNN}
+\end{figure}
+
+\begin{shaded}
+Es importante señalar que si se hubiese utilizado como regla de clasificación la $1-NN$, la muestra $x$ sería asignada a la Clase 1, pues el vecino más cercano de la muestra $x$ pertenece a la Clase 1.
+\end{shaded}
+
+\subsection{Otros algoritmos que clasifican}
+\subsubsection{Árboles de decision}
+Un \textbf{árbol de decisión} es un grafo dirigido donde los nodos son reglas sobre los atributos del conjunto de instancias y las hojas del árbol son el atributo clase o el atributo sobre el que se va a intentar clasificar. A lo largo de la historia se han ido surgiendo algoritmos que siguen esta estructura con el objetivo de dar una solución al problema de la clasiificación, algunos de los algoritmos más relevantes que aprenden basandose en árboles de decisión son:
+\begin{itemize}
+\item \textbf{Algoritmo ID3:} Es un algoritmo que indice árboles de decisión a partir de un conjunto dado de instancias con atributos determinados, fue inventado por John Ross Quinlan en los años 60 siguiendo el sencillo principio de la navaja de Occam para intentar construir un árbol de decisión lo más pequeño posible.
+
+El algoritmo trata de calcular la entropía o valor promedio que cada uno de los atributos de un conjunto de datos y haciendo uso de esta información dividir en subconjuntos más pequeños basandose en las instancias con la entropía mínima o máxima dependiendo del criterio, para despues construir un árbol de decisión que contenga el atributo con dicha entropía, a partir de aqui utiliza la recursividad para repetir el proceso con los demás atributos.
+\item \textbf{Algoritmo C4.5:} Es el precursor del algoritmo ID3 desarrollado también por Quinlan que empezo a tomar relevancia despues de que obtubiera el primer puesto  en el documento publicado por Springer LNCS llamado Top 10 Algorithms in Data Mining.
+El algoritmo construye árboles de decisión de la misma manera que lo hace el algoritmo ID3 usando el concepto de entropía solo que ahora el criterio de selección de que atributo usar para dividir el conjunto en subconjuntos de forma efectiva cambia usandose una ganancia de información o entropía relativa, esta medida es la diferencia entre dos distribuciones de probabilidad P y Q donde P representa la distribución de valores corectamente clasificados y Q  es una aproximación de P.
+\item \textbf{Algoritmo Random Forest:} Recientemente en el año 1995, Tinkam Ho un analísta de datos publica un documento en el que se describia este algoritmo, este algoritmo trata de construir un conjunto de árboles de decisión. Haciendo uso de un conjunto de entrenamiento hacemos que se construya un conjunto de árboles de decisión en el que 
+dada una entrada, que puede ser una nueva instancia, esta se clasifica por todos los árboles del conjunto y se predice a que clase esta instancia pertenece en función de la mayoría de los resultados de la clasificación anterior, es decir si hay 3 árboles de decisión y 2 dicen que pertenece a el conjunto de instancias mal clasificadas entonces ese será su valor de clase.
+\end{itemize}
+\subsubsection{Support Vector Machine}
+
+\section{Neural Network (Red neuronal)}
+¿Cuándo?¿Quíen?¿Qué?¿Cómo?¿Porqué?
+Las redes neuronales son un conjunto de neuronas artificiales interconectadas, son un paradigma de aprendizaje y procesamiento automático bioinspirado en el sistema nervioso, que es objeto de estudio en el campo de la inteligencia artificial, pero ¿Cuándo surgió esta idea? y ¿Qué ideas han dado lugar a las redes neuronales tal y como son en la actualidad?.
+
+En el año 1943, el neurofisiólogo Warren McCulloch y el matemático Walter Pitts escribieron un documento en el que se describe como podrían funcionar las neuronas construyendo un modelo simple de red neuronal usando circuitos electrónicos. Para esto se basan en dos puntos de vista distintos, los procesos biológicos del cerebro y la aplicación de estas redes en la inteligencia artificial.
+
+En el año 1949 Donald Hebb en su obra The Organization of Behavior señala el hecho de que cada vez que se usa un camino de una red neuronal estas se fortalecen explicando que este concepto es fundamental para el aprendizaje de un ser humano y esto es conocido como regla de hebb o teoría de la asamblea celular. Este es un mecanísmo de plasticidad sináptica (que se encarga de la modulación de percepción se estimulos de una neurona) en el que el valor de una conexión sináptica se incrementa si las neuronas de ambos lados de dicha sinapsis se activan repetidas veces de forma simultanea, la teoria suele resumirsa a la frase: "Las células que disparan juntas, permanecerán conectadas", aunque esta no debe tomarse literalmente. Esta forma de aprendizaje se denomina aprendizaje de Hebb o Hebb Learning.
+
+Hasta ahora los ordenadores no tenían la capacidad de simular una red neuronal pero a partir de los años 50, estos obtienen mayor capacidad y es Nathanial Rochester de los laboratorios de investigación de IBM el que intento por primera vez simular pero fue un primer intento fallido.
+
+Marvin Lee Minsky y Dean Edmonds construyeron la primera máquina que ejecutaria una red neuronal haciendo uso del aprendizaje de Hebb anterior en el año 1951, aunque en entre los años 1954-1956 también hay otros autores que simulan una red neuronal sobre máquinas llamadas por entonces calculadoras.
+
+Durante los proximos años se desarrolla el primer modelo de red neuronal aplicado a un problema real apodado Madaline o Multiple adaptative lineal elements, el problema fue eliminar el eco producido en las lineas telefónicas y esto se trataba de hacer a través de un filtro adaptativo. En los años 60 despues de que la arquitectura tradicional de Von Neumann entrase en escena, las redes neuronales
+se dejaron de lado. En el año 1969 Marvin Minsky y Seymour Papert publicaron un documento en el que se se dice que un computador no tenia la suficiente capacidad de procesamiento como para ejecutar una red neuronal extensa por mucho tiempo, a parte de que el perceptrón no era capaz de procesar los circuitos x-or.
+
+A partir de los 80 el interés en el área se reestablece y aparecen nuevos trabajos y documentos que pretendían hacer más funcionales las máquinas actuales haciendo bidireccionales las conexiones entre las neuronas que previamente fueron unidirecionales, además surgen nuevas ideas y conceptos que se apoyan en la base de las redes neuronales artificiales como las redes neuronales multicapa que extiende el problema introducido por Widrow y Hoff en el año 1952. 
+
+Actualmente el avance de este área se esta realizando a nivel de hardware más que del software, esto es debido a que se necesita mucha capacidad para procesar y la eficiencia de una red neuronal depende mucho del hardware usado, normalmente se construyen máquinas dedicadas a una tarea con un hardware específico para poder ejecutar la red neuronal necesaria como algunas que veremos en secciones posteriores.
+
+\section{Máquinas y juegos}
 En esta sección mencionaremos los años y nombraremos las personalidades que han sido capaces de crear un programa o programas basandose en algoritmos de aprendizaje para que las máquinas sean capaces de aplicar las reglas del juego de una forma lógica y siempre con la intención de ganar.
-\subsubsection{Máquinas jugando a las Damas}
+\subsection{Máquinas jugando a las Damas}
 En el año 1952 Arthur Samuel que acababa de unirse a un laboratorio de investigación de IBM escribe uno de los primeros programa de aprendizaje automático capaz de jugar a las damas. Se le denomina como un pionero en el campo de juegos de ordenador e inteligencia artificial. El programa de Samuel parece que fue el "primer programa" en el mundo capaz de aprender.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{acc}
+\caption{Arthur Samuel jugando a las damas}
+\label{Ejemplo kNN}
+\end{figure}
 
 El programa hacía uso de un árbol de juegos basandose en la estrategia minimax principalmente y usando la poda $\alpha\beta$ algoritmos que tratan de anticiparse a lo que hará el contrincante generando un árbol de acciones y podando quedandose con los caminos más probables y eligiendo aquel que obtenga un mayor porcentaje de victoria, pero luego diseñó varios mecanismos que le permitirían mejorar su programa, a estos mecanismos los denomino rote learning o aprendizaje por rutina que es básicamente una técnica que recuerda cada una de las posiciones que ya han sido visitadas basandose en la repeteción y una revaloración del estado de juego.
 
-\subsubsection{Máquinas jugando al Backgammon}
+\subsection{Máquinas jugando al Backgammon}
 En el año 1992, Gerry Tesauro desarrolla un programa de aprendizaje capaz de jugar al backgammon, basandose en conocimiento obtenido del juego. Esta aplicación del aprendizaje automático fue capaz de jugar casi tan bien como el campeón mundial en el juego. El aprendizaje estaba basado en un algoritmo abreviado TD o temporal difference learning, es un algortimo que trata de realizar predicciones basado en una combinación del método de Monte Carlo y la programación dinámica.
 
 \subsubsection{Máquinas jugando al Ajedrez}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{deepblue}
+\caption{Máquina Deep Blue de IBM}
+\label{Ejemplo kNN}
+\end{figure}
+
 La supercomputadora Deep Blue instalada el año 1996 y desarrollada por IBM era capáz de jugar al ajedrez, lo novedoso de esto es que fue la primera máquina que consiguió vencer una partida al vigente campeón del mundo Gary Kasparov en un encuentro de 6 partidas realizado el mismo año. Sin embargo deep blue no fue capaz de ganar el encuentro debido a que Kasparov gano 4 de los 6 y empató los otros 2. En el año 1997 esta máquina tuvo una considerable mejora pasandose a llamar Deeper Blue que volvio a jugar contra aún vigente campeón del mundo Kasparov de nuevo en un encuentro a 6 partidas donde esta vez ganó Deeper blue con 3 victorias 2 derrotas y 1 empate.
 
-\subsubsection{Máquinas jugando al go}
+\subsection{Máquinas jugando al go}
+
 En el año 2015 Google DeepMind de Londres desarrolla un programa de ordenador llamado AlphaGo capaz de jugar al juego Go. Que resulta ser el primer programa que juega a ese juego en derrotar una persona profesional en un tablero de 19x19. El juego Go es considerado mucho más dificil de tratar computacionalmente que otros juegos como el ajedrez debido a que se tiene una gran cantidad de opciones y por tanto un gran árbol de decisión generado. Esto hace que los típicos algoritmos como la poda $\alpha\beta$ y otros métodos de búsqueda sean difíciles de usar, la capacidad de aprendizaje del programa se basa en una red neuronal que usa deep learning. El deep learning es una rama del machine learning que toma un conjunto de algoritmos que intentan obtener un modelo de abstracciones sobre los datos.
 
-\subsection{Nearest Neighbor}
-\subsection{Stanford cart y otros experimentos}
-\subsection{Neocognitron}
-\subsection{Backpropagation}
-\subsection{Algoritmos de aprendizaje}
+\section{Stanford cart y otros experimentos}
+\section{Neocognitron}
+\section{Backpropagation}
+
 \subsection{Final con el estado actual del machine learning}
 Esto va a ser una recopilación de los finales que encontreis para cada área.
 \begin{thebibliography}{9}
@@ -379,8 +516,54 @@ Esto va a ser una recopilación de los finales que encontreis para cada área.
  	\textbf{Perceptrón},
  \url{ftp://decsai.ugr.es/pub/usuarios/castro/Actividades/Redes-Neuronales/Apuntes/Apuntes%20Javier%20Rodriguez%20Blazquez/Redes%20de%20una%20capa.pdf}
  
+  \bibitem{neighbour1}
+ 	\textbf{Nearest Neighbour},
+ \url{http://sge.wonderville.ca/machinelearning/history/history.html}
  
+ \bibitem{neighbour2}
+ 	\textbf{Nearest Neighbour},
+ \url{http://www.synergicpartners.com/una-breve-historia-del-machine-learning/}
  
-
+ \bibitem{neighbour3}
+ 	\textbf{Nearest Neighbour},
+ \url{http://www.scholarpedia.org/article/K-nearest_neighbor}
+ 
+ \bibitem{neighbour4}
+ 	\textbf{Nearest Neighbour},
+ \url{http://todobi.blogspot.com.es/2016/02/una-breve-historia-del-machine-learning.html}
+ 
+ \bibitem{neighbour5}
+ 	\textbf{Nearest Neighbour},
+ \url{https://prezi.com/0oyoj6v-eycs/algoritmo-knn/}
+ 
+ \bibitem{neighbour6}
+ 	\textbf{Nearest Neighbour},
+ \url{https://www.ecured.cu/Regla_de_los_K_vecinos_m%C3%A1s_cercanos}
+ 
+ \bibitem{neighbour7}
+ 	\textbf{Nearest Neighbour},
+ \url{https://prezi.com/lzilzh3g8xvf/algoritmo-de-los-k-vecinos-mas-proximos/}
+ 
+  \bibitem{turing1}
+ 	\textbf{Máquina de aprendizaje de Turing},
+ \url{https://hipertextual.com/2011/10/inteligencia-artificial-test-de-turing}
+ 
+ \bibitem{turing2}
+ 	\textbf{Máquina de aprendizaje de Turing},
+ \url{http://matap.dmae.upm.es/cienciaficcion/DIVULGACION/3/TestTuring.htm}
+ 
+ \bibitem{turing3}
+ 	\textbf{Máquina de aprendizaje de Turing},
+ \url{https://es.wikipedia.org/wiki/Test_de_Turing}
+ 
+ \bibitem{turing4}
+ 	\textbf{Máquina de aprendizaje de Turing},
+ \url{http://xamanek.izt.uam.mx/map/cursos/Turing-Pensar.pdf}
+ 
+ \bibitem{turing5}
+ 	\textbf{Máquina de aprendizaje de Turing},
+ \url{http://enciclopedia.us.es/index.php/Prueba_de_Turing}
+ 
+    
 \end{thebibliography}
 \end{document}
