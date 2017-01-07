@@ -175,6 +175,25 @@ Si el departamento de marketing tuviera esta información, podría proponerles a
 \newpage
 
 \section{Antecedentes estadísticos}
+El machine learning 
+\begin{itemize}
+	\item \textbf{Teorema de Bayes:}. En 1812 \textbf{Pierre-Simon Laplace} publica \emph{Théorie Analytique des Probabilités}, en la que expande la obra de Bayes y define lo que ahora se conoce como Teorema de Bayes.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\textwidth]{bayes.png}
+		\caption{Teorema de Bayes}
+		\label{Teorema de Bayes}
+	\end{figure}
+
+	La teoría bayesiana es muy usada en machine learning. Su básica idea es que todo lo que has aprendido es incierto, así que tienes que calcular la probabilidad de que sea incorrecto, e ir actualizándola según las pruebas. De acuerdo a estos principios se crearon los primeros filtros de correo spam.
+	
+	\item \textbf{Método de los mínimos cuadrados}.Adrien-Marie Legendre describió en \textbf{1805} el \emph{"méthode des moindres carrés"} conocida como el método de los mínimos cuadrados.
+	
+	Su aplicación más importante es en ajuste de datos. El mejor ajuste en el sentido de los mínimos cuadrados minimiza la suma de los residuos cuadrados, siendo un residuo la diferencia entre un valor observado y el valor ajustado proporcionado por un modelo.
+	\item \textbf{Cadenas de Markov:} En \textbf{1948 Claude Shannon} publicó un artículo, \emph{The Mathematical Theory of Communication}, en el que creó el campo de la teoría de la información, introduciendo el concepto de entropía a través del modelado de Markov del inglés. Estos modelos idealizados pueden capturar muchas de las regularidades estadísticas de los sistemas. También permiten una estimación efectiva del estado y reconocimiento de patrones.
+	
+\end{itemize}
 \section{Máquina de aprendizaje de Turing}
 \textbf{Alan Turing} (1912-1954) fue un matemático, criptógrafo, filósofo y un teórico de la computación que, además de trabajar en el equipo que descifró los códigos Enigma de Alemania, fue un pionero en el campo de la inteligencia artificial publicando uno de los primeros trabajos sobre esta materia.
 
@@ -479,7 +498,32 @@ La supercomputadora \textbf{Deep Blue} instalada el año \textbf{1996} y desarro
 En el año \textbf{2015 Google DeepMind} de Londres desarrolla un programa de ordenador llamado AlphaGo capaz de jugar al juego Go. Que resulta ser el primer programa que juega a ese juego en derrotar una persona profesional en un tablero de 19x19. El juego Go es considerado mucho más dificil de tratar computacionalmente que otros juegos como el ajedrez debido a que se tiene una gran cantidad de opciones y por tanto un gran árbol de decisión generado. Esto hace que los típicos algoritmos como la poda $\alpha\beta$ y otros métodos de búsqueda sean difíciles de usar, la capacidad de aprendizaje del programa se basa en una red neuronal que usa deep learning. El deep learning es una rama del machine learning que toma un conjunto de algoritmos que intentan obtener un modelo de abstracciones sobre los datos.
 
 \section{Stanford cart y otros experimentos}
+El \textbf{Stanford Cart} nació de una investigación para controlar un Moon Rover desde la Tierra. Fue construido en \textbf{1960} por un estudiante, \textbf{James L. Adams}, quien había estado trabajando en un proyecto de la NASA que pretendía que alguien desde la Tierra pudiese conducir alrededor de la Luna usando una cámara de vídeo en el vehículo.
+Adams se centró en estudiar la controlabilidad del vehículo con varias configuraciones de la velocidad de comunicación. Demostró que con un retardo de comunicación correspondiente al viaje de ida y vuelta a la Luna (aproximadamente 2.5 segundos), el vehículo no podía ser controlado de manera fiable si viajaba a más de 0.3 km/h.
+
+En \textbf{1962} otro estudiante, \textbf{Paul W. Braisted}, ideó un esquema para mejorar la controlabilidad del vehículo agregando una computadora que funcionaba como un predictor que tomaba en cuenta comandos de dirección anteriores y dibujaba un punto en la pantalla de televisión que indicaba la localización cuando una orden se llevara a cabo. Con esta mejora el vehículo podría ser controlado a 8 km/h. 
+
+En \textbf{1969}, \textbf{Lester Earnest} intentó construir un vehículo de carretera auto-dirigido basado en el aporte visual. Earnest tenía en mente tratar de conducir por la carretera circular que rodea la instalación de SAIL usando la línea central del camino y otras referencias visuales. Sin embargo sabía que el carro no podría llevar una computadora bastante grande para hacer eso, así que planeó utilizar un transmisor en el carro para enviar imágenes de la cámara de la TV a la computadora y otro enlace de radio para enviar órdenes de guía de la computadora al carro. Las operaciones experimentales comenzaron con un operador humano que controlaba el carro a través de la computadora usando imágenes de televisión. Utilizando el procesador KL10 entonces disponible, que funcionaba a unos 2,5 MIPS, \textbf{Hans Moravec} fue capaz de usar la visión multi-ocular para navegar lentamente alrededor de los obstáculos en un ambiente interior.
+En \textbf{1979}, el carro cruzó con éxito una sala llena de sillas sin intervención humana en unas cinco horas.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{stanford_cart.jpg}
+	\caption{Stanford Cart}
+	\label{Stanford Cart}
+\end{figure}
+Hoy en un día hay varios programas activos de investigación para fabricar coches completamente autónomos.En agosto de 2016 la empresa estadounidense nuTonomy, filial del MIT, lanzó el primer taxi autónomo del mundo en Singapur.
 \section{Neocognitron}
+El neocognitron es una red neuronal artificial jerárquica y multicapa propuesta por \textbf{Kunihiko Fukushima} en los años ochenta.Se ha usado para el reconocimiento de caracteres escritos a mano y otras tareas de reconocimiento de patrones, y sirvió de inspiración para redes neuronales convencionales.Su diseño se basó en el trabajo anterior realizado por Hubel y Weisel que aclaraba parte de la arquitectura funcional de la corteza visual.
+
+El neocognitron consiste en múltiple tipos de células, las más importantes son las llamadas células S y células C. Las células S funcionan como células que extraen características. Sus conexiones de entrada son variables y se modifican a través del aprendizaje. En términos generales, las características locales, tales como bordes o líneas en orientaciones particulares, se extraen en etapas inferiores. Más características globales, como partes de los patrones de aprendizaje, se extraen en etapas superiores.
+Las células C, se insertan en la red para permitir errores de posición en las características del estímulo. Cada célula C recibe conexiones de entrada excitatoria de un grupo de células S que extraen la misma característica, pero desde posiciones ligeramente diferentes. La célula C responde si al menos una de estas células S produce una salida.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{neocognitron1.png}
+	\caption{Estructura del neocognitron.}
+	\label{Estructura del neocognitron.}
+\end{figure}
 
 \subsection{Final con el estado actual del machine learning}
 Esto va a ser una recopilación de los finales que encontreis para cada área.
@@ -495,6 +539,9 @@ Esto va a ser una recopilación de los finales que encontreis para cada área.
  \bibitem{conceptosbasicos}
  	\textbf{Introducción},
  \url{ftp://decsai.ugr.es/pub/usuarios/castro/Actividades/Redes-Neuronales/Apuntes/Apuntes%20Javier%20Rodriguez%20Blazquez/Conceptos%20basicos.pdf}
+
+\bibitem{estadistica1}
+\url{http://www.centrodeinnovacionbbva.com/noticias/las-cinco-tribus-del-machine-learning}
 
 \bibitem{standford1}
 	\textbf{Neural Networks},
@@ -572,6 +619,14 @@ Esto va a ser una recopilación de los finales que encontreis para cada área.
  	\textbf{Máquina de aprendizaje de Turing},
  \url{http://enciclopedia.us.es/index.php/Prueba_de_Turing}
  
-    
+    \bibitem{stanford}
+    \textbf{Stanford Cart},
+    \url{http://web.stanford.edu/~learnest/sail/cart.htm}
+ \bibitem{neocognitron1}
+ \textbf{Neocognitron},
+ \url{https://en.wikipedia.org/wiki/Neocognitron}
+ \bibitem{neocognitron2}
+ \textbf{Neocognitron},
+ \url{http://www.scholarpedia.org/article/Neocognitron}
 \end{thebibliography}
 \end{document}
