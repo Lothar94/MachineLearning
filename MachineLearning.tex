@@ -170,9 +170,17 @@ Por tanto, la predicción sería: \textit{Si los clientes que tienen estas carac
 
 Si el departamento de marketing tuviera esta información, podría proponerles a dichos clientes un cambio de plan de tarificación o podría revisar por qué han llamado al servicio de atención al cliente para intentar mantenerlos.
 \end{shaded}
-\section{Linea temporal}
 
-\newpage
+\section{Tipos de aprendizaje}
+Los diferentes algoritmos se pueden clasificar en función de la salida que produzca y de su forma de tratar con los ejemplos. Los principales tipos son:
+\begin{itemize}
+	\item \textbf{Aprendizaje supervisado:} Aprende, a partir de un conjunto de instancias pre-etiquetadas un método para predecir(Ejemplo, clasificación:la clase a que pertenece una nueva instancia)
+	\item \textbf{Aprendizaje no supervisado}: No hay conocimiento a priori sobre el problema, no hay instancias etiquetadas, no hay supervisión sobre el procedimiento.(Ejemplo, clustering:Encuentra un agrupamiento de instancias “natural” dado un conjunto de instancias no etiquetadas)
+	\item \textbf{Aprendizaje semisupervisado}: Este tipo de algoritmos combinan los dos algoritmos anteriores, teniendo en cuenta ejemplos clasificados y no clasificados.
+	\item \textbf{Aprendizaje por refuerzo}: Los objetivos reaccionan a las acciones del agente mediante una función(reward) que informa al agente de la bondad de la acción. Por lo tanto, el sistema aprende a base de ensayo-error, reforzando las acciones que reciben una respuesta positiva.
+	\item \textbf{Aprendizaje multi-tarea}:Métodos que usan conocimiento previamente aprendido para resolver problemas parecidos. Se basa en la teoría de que nuestro cerebro tiene que aprender no lo hace de forma aislada, sino que utiliza todo el conocimiento previamente aprendido para ayudarse en este nuevo aprendizaje. 
+\end{itemize}
+
 
 \section{Antecedentes estadísticos}
 Para que los sistemas puedan aprender por ellos mismos, se utilizan una serie de técnicas y algoritmos capaces de crear modelos predictivos, patrones de comportamiento, etc. Este proceso está basado en la teoría estadística. A continuación vamos a ver 3 de los métodos más importantes:
@@ -525,8 +533,7 @@ Las células C, se insertan en la red para permitir errores de posición en las 
 	\label{Estructura del neocognitron.}
 \end{figure}
 
-\subsection{Final con el estado actual del machine learning}
-Esto va a ser una recopilación de los finales que encontreis para cada área.
+
 \begin{thebibliography}{9}
 
  \bibitem{Timeline}
@@ -540,6 +547,9 @@ Esto va a ser una recopilación de los finales que encontreis para cada área.
  	\textbf{Introducción},
  \url{ftp://decsai.ugr.es/pub/usuarios/castro/Actividades/Redes-Neuronales/Apuntes/Apuntes%20Javier%20Rodriguez%20Blazquez/Conceptos%20basicos.pdf}
 
+\bibitem{tipos_aprendizaje}
+	\textbf{Tipos de aprendizaje}
+	\url{http://www.cs.us.es/~fsancho/?e=75}
 \bibitem{estadistica1}
 \url{http://www.centrodeinnovacionbbva.com/noticias/las-cinco-tribus-del-machine-learning}
 
