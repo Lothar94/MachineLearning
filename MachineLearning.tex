@@ -12,7 +12,7 @@
 \definecolor{shadecolor}{rgb}{0.690, 0.933, 0.525}
 
 % Imágenes
-\usepackage{graphicx} 
+\usepackage{graphicx}
 
 \usepackage{amsmath}
 % para importar svg
@@ -114,7 +114,7 @@ Elena Toro Pérez} % Author
 
 Pero, ¿qué significan las palabras aprender y automáticamente, en este contexto?
 
-\textit{Aprender} en este contexto quiere decir identificar patrones complejos en millones de datos. La máquina que realmente aprende es un algoritmo que revisa los datos y es capaz de predecir comportamientos futuros. 
+\textit{Aprender} en este contexto quiere decir identificar patrones complejos en millones de datos. La máquina que realmente aprende es un algoritmo que revisa los datos y es capaz de predecir comportamientos futuros.
 
 \textit{Automáticamente}, también en este contexto, implica que estos sistemas se mejoran de forma autónoma con el tiempo, sin intervención humana.
 
@@ -133,7 +133,7 @@ Hoy en día, podemos observar la aplicación concreta de Machine Learning en var
 		    \item \textbf{Transporte:} Sistemas de rutas y seguimiento de flotas, Diagnóstico de frenos en camiones...
 		    \item \textbf{Voz:} Reconocimiento de voz, Transformación de texto escrito a voz...
 		\end{itemize}
-		
+
 \underline{Un ejemplo concreto} de aplicación de esta técnica puede ser el siguiente:
 
 \begin{shaded}
@@ -178,7 +178,7 @@ Los diferentes algoritmos se pueden clasificar en función de la salida que prod
 	\item \textbf{Aprendizaje no supervisado}: No hay conocimiento a priori sobre el problema, no hay instancias etiquetadas, no hay supervisión sobre el procedimiento.(Ejemplo, clustering:Encuentra un agrupamiento de instancias “natural” dado un conjunto de instancias no etiquetadas)
 	\item \textbf{Aprendizaje semisupervisado}: Este tipo de algoritmos combinan los dos algoritmos anteriores, teniendo en cuenta ejemplos clasificados y no clasificados.
 	\item \textbf{Aprendizaje por refuerzo}: Los objetivos reaccionan a las acciones del agente mediante una función(reward) que informa al agente de la bondad de la acción. Por lo tanto, el sistema aprende a base de ensayo-error, reforzando las acciones que reciben una respuesta positiva.
-	\item \textbf{Aprendizaje multi-tarea}:Métodos que usan conocimiento previamente aprendido para resolver problemas parecidos. Se basa en la teoría de que nuestro cerebro tiene que aprender no lo hace de forma aislada, sino que utiliza todo el conocimiento previamente aprendido para ayudarse en este nuevo aprendizaje. 
+	\item \textbf{Aprendizaje multi-tarea}:Métodos que usan conocimiento previamente aprendido para resolver problemas parecidos. Se basa en la teoría de que nuestro cerebro tiene que aprender no lo hace de forma aislada, sino que utiliza todo el conocimiento previamente aprendido para ayudarse en este nuevo aprendizaje.
 \end{itemize}
 
 
@@ -186,7 +186,7 @@ Los diferentes algoritmos se pueden clasificar en función de la salida que prod
 Para que los sistemas puedan aprender por ellos mismos, se utilizan una serie de técnicas y algoritmos capaces de crear modelos predictivos, patrones de comportamiento, etc. Este proceso está basado en la teoría estadística. A continuación vamos a ver 3 de los métodos más importantes:
 \begin{itemize}
 	\item \textbf{Teorema de Bayes:}. En 1812 \textbf{Pierre-Simon Laplace} publica \emph{Théorie Analytique des Probabilités}, en la que expande la obra de Bayes y define lo que ahora se conoce como Teorema de Bayes.
-	
+
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.3\textwidth]{bayes.png}
@@ -195,12 +195,12 @@ Para que los sistemas puedan aprender por ellos mismos, se utilizan una serie de
 	\end{figure}
 
 	La teoría bayesiana es muy usada en machine learning. Su básica idea es que todo lo que has aprendido es incierto, así que tienes que calcular la probabilidad de que sea incorrecto, e ir actualizándola según las pruebas. De acuerdo a estos principios se crearon los primeros filtros de correo spam.
-	
+
 	\item \textbf{Método de los mínimos cuadrados}.Adrien-Marie Legendre describió en \textbf{1805} el \emph{"méthode des moindres carrés"} conocida como el método de los mínimos cuadrados.
-	
+
 	Su aplicación más importante es en ajuste de datos. El mejor ajuste en el sentido de los mínimos cuadrados minimiza la suma de los residuos cuadrados, siendo un residuo la diferencia entre un valor observado y el valor ajustado proporcionado por un modelo.
 	\item \textbf{Cadenas de Markov:} En \textbf{1948 Claude Shannon} publicó un artículo, \emph{The Mathematical Theory of Communication}, en el que creó el campo de la teoría de la información, introduciendo el concepto de entropía a través del modelado de Markov del inglés. Estos modelos idealizados pueden capturar muchas de las regularidades estadísticas de los sistemas. También permiten una estimación efectiva del estado y reconocimiento de patrones.
-	
+
 \end{itemize}
 \section{Máquina de aprendizaje de Turing}
 \textbf{Alan Turing} (1912-1954) fue un matemático, criptógrafo, filósofo y un teórico de la computación que, además de trabajar en el equipo que descifró los códigos Enigma de Alemania, fue un pionero en el campo de la inteligencia artificial publicando uno de los primeros trabajos sobre esta materia.
@@ -221,20 +221,20 @@ La incógnita sobre la capacidad de las máquinas de pensar tiene una larga hist
 Veamos algunos antecedentes al Test de Turing:
 \begin{itemize}
     \item \textbf{René Descartes} tuvo ideas similares a la prueba de Turing en su texto \textit{Discurso del Método} de \textbf{1637} donde escribió: "\textit{Cuántos autómatas diferentes o máquinas móviles se pueden construir por la industria del hombre […] Podemos comprender con facilidad el hecho de que una máquina sea diseñada para pronunciar palabras, incluso responder ante acciones tangibles que produzcan un cambio en sus órganos; por ejemplo, si se le tocara de una manera particular no preguntaría qué le queremos decir; si se le toca en otra parte puede decir que se le está lastimando entre otras cosas. Pero nunca sucede que pueda ordenar su habla en distintas maneras para responder apropiadamente ante todo lo que se diga en su presencia, de la misma manera que la clase más baja de humanos puede hacerlo.}"
-    
+
     Descartes reconoce que los autómatas son capaces de reaccionar ante interacciones humanas, pero argumenta que tal autómata carece de la capacidad de responder adecuadamente ante lo que se diga en su presencia, de la misma manera en la que un humano podría.
-    
+
     Por lo tanto, Descartes abre las puertas para la prueba de Turing al identificar la insuficiencia de una respuesta lingüística apropiada, lo cual separa al humano del autómata. Descartes no llega a considerar que una respuesta lingüística apropiada puede ser producida por un autómata del futuro y, por lo tanto, no propone el test de Turing como tal, aunque ya razonó los criterios y el marco conceptual.
-    
+
     \item \textbf{Denis Diderot} también planteó, en su \textit{Pensées philosophiques}, un criterio de la prueba de Turing: "\textit{Si se encuentra un loro que puede responder a todo, se le consideraría un ser inteligente sin duda alguna.}"
-    
+
     Aunque esto no signifique del todo que él esté de acuerdo con el posterior Test de Turing, sí muestra que ya era un argumento común usado por los materialistas de la época.
-    
+
     \item En \textbf{1936}, el filósofo \textbf{Alfred Ayer} consideraba la pregunta filosófica típica sobre otras mentes: "\textit{¿Cómo sabemos que otras personas experimentan el mismo nivel de conciencia que nosotros?.}"
-    
+
     En su libro \textit{Lenguaje, Verdad y Lógica}, Ayer propuso un método para distinguir entre un hombre consciente y una máquina inconsciente: "\textit{El único argumento que tengo para asegurar que, lo que parece ser consciente, no es un ser consciente sino un muñeco o una máquina, es el hecho de que falle en las pruebas empíricas por medio de las cuales se determina la presencia o ausencia de la conciencia}". O, lo que es lo mismo, "\textit{algo no está consciente si reprueba una prueba de consciencia}".
-    
-    Esta es una propuesta muy similar a la prueba de Turing, aunque esta se enfoca en la conciencia en vez de en la inteligencia. Además se desconoce si Turing estaba familiarizado con el clásico filosófico de Ayer.\\ 
+
+    Esta es una propuesta muy similar a la prueba de Turing, aunque esta se enfoca en la conciencia en vez de en la inteligencia. Además se desconoce si Turing estaba familiarizado con el clásico filosófico de Ayer.\\
 \end{itemize}
 
 \textbf{¿En qué consistía el Test de Turing?} El Test de Turing se basaba en el Juego de la Imitación, una prueba en la que se ubicaban en una habitación un \textbf{hombre} y a una \textbf{mujer} frente a terminales que tuviesen algún sistema de comunicación (teletipos en los años 50).
@@ -287,19 +287,32 @@ Por el año \textbf{1958} \textbf{Frank Rosenblatt} desarrollar el \textbf{perce
 
 Durante los próximos años se desarrolla el \textbf{primer modelo de red neuronal aplicado a un problema real} apodado \textbf{Madaline} o Multiple adaptative lineal elements, el problema fue eliminar el eco producido en las lineas telefónicas y esto se trataba de hacer a través de un filtro adaptativo. En los años 60 después de que la arquitectura tradicional de Von Neumann entrase en escena, las redes neuronales se dejaron de lado. En el año 1969 Marvin Minsky y Seymour Papert publicaron un documento en el que se se dice que un computador no tenia la suficiente capacidad de procesamiento como para ejecutar una red neuronal extensa por mucho tiempo, a parte de que el perceptrón no era capaz de procesar los circuitos x-or.
 
-A partir de los 80 el interés en el área se restablece y aparecen nuevos trabajos y documentos que pretendían hacer más funcionales las máquinas actuales haciendo \textbf{bidireccionales} las \textbf{conexiones} entre las neuronas que previamente fueron unidireccionales, además surgen nuevas ideas y conceptos que se apoyan en la base de las redes neuronales artificiales como las redes neuronales multicapa que extiende el problema introducido por Widrow y Hoff en el año 1952. 
+A partir de los 80 el interés en el área se restablece y aparecen nuevos trabajos y documentos que pretendían hacer más funcionales las máquinas actuales haciendo \textbf{bidireccionales} las \textbf{conexiones} entre las neuronas que previamente fueron unidireccionales, además surgen nuevas ideas y conceptos que se apoyan en la base de las redes neuronales artificiales como las redes neuronales multicapa que extiende el problema introducido por Widrow y Hoff en el año 1952.
 
 Actualmente el avance de este área se esta realizando a nivel de \textbf{hardware} más que del software, esto es debido a que se necesita mucha capacidad para procesar y la eficiencia de una red neuronal depende mucho del hardware usado, normalmente se construyen máquinas dedicadas a una tarea con un hardware específico para poder ejecutar la red neuronal necesaria como algunas que veremos en secciones posteriores.
 
 \subsection{BackPropagation}
-La \textbf{propagación hacia atrás de errores} o \textbf{''backward propagation of errors''}, es un conocido método de entrenamiento de redes neuronales artificiales, se trata de un algoritmo de aprendizaje que usa un método de optimización que normalmente suele ser un descenso local o descenso de gradiente. El algoritmo fue descrito en el año \textbf{1986} por \textbf{David Rumelhart}, \textbf{Geoff Hinton} y \textbf{Ronald J. Williams} aunque \textbf{Seppo Linnainmaa} publicó en el año \textbf{1970} un método denominado \textbf{Diferenciación automática} que corresponde al actual concepto de propagación hacia atrás, el algoritmo se basaba en la repetición de dos procesos la propagación y la actualización de pesos de una neurona, cuando una instancia se usa como entrada de una neurona, se propaga hacia delante de capa en capa hasta que llega a la salida o última capa, y es aquí donde se hace uso de una función denominada función de pérdida para calcular el error producido por la entrada que se propaga hacia la primera capa de la neurona para recalcular la entrada haciendo uso de ese error para optimizar los resultados con el método de descenso de gradiente. 
+La \textbf{propagación hacia atrás de errores} o \textbf{''backward propagation of errors''}, es un conocido método de entrenamiento de redes neuronales artificiales, se trata de un algoritmo de aprendizaje que usa un método de optimización que normalmente suele ser un descenso local o descenso de gradiente. El algoritmo fue descrito en el año \textbf{1986} por \textbf{David Rumelhart}, \textbf{Geoff Hinton} y \textbf{Ronald J. Williams} aunque \textbf{Seppo Linnainmaa} publicó en el año \textbf{1970} un método denominado \textbf{Diferenciación automática} que corresponde al actual concepto de propagación hacia atrás, el algoritmo se basaba en la repetición de dos procesos la propagación y la actualización de pesos de una neurona, cuando una instancia se usa como entrada de una neurona, se propaga hacia delante de capa en capa hasta que llega a la salida o última capa, y es aquí donde se hace uso de una función denominada función de pérdida para calcular el error producido por la entrada que se propaga hacia la primera capa de la neurona para recalcular la entrada haciendo uso de ese error para optimizar los resultados con el método de descenso de gradiente.
 
 \section{El problema de la Clasificación}
 En el aprendizaje automático y la estadística en \textbf{problema de las clasificación} consiste en identificar un conjunto de subconjuntos de miembros de una población basándose en un conjunto de entrenamiento que contiene instancias que ya son conocidas. La clasificación es un ejemplo de reconocimiento de patrones en una población.
 
-En primer lugar es preciso explicar sobre que se parte a la hora de aplicar estos algoritmos que aprenden para clasificar. Los \textbf{datos} son representación simbólica de atributos o un conjunto de atributos, estos son la principal materia prima para el aprendizaje, sin ellos no sería posible realizar una predicción con mayor o menor seguridad de que la predicción es acertada. Los datos normalmente son divididos en dos conjuntos llamados \textbf{conjunto de test o prueba} y \textbf{conjunto de entrenamiento}, y lo que se busca con la aplicación de alguno de estos algoritmos es la creación de un modelo de clasificación que sea más general a partir de los datos obtenidos, para ello se hace uso de el algoritmo sobre el conjunto de entrenamiento para generar el modelo y luego se prueba sobre el conjunto de prueba. De aquí surge otra de los grandes problemas de los algoritmos de clasificación el \textbf{sobreajuste} o sobre entrenamiento, se produce cuando un modelo se ajusta muy bien al conjunto de datos que usamos para entrenar y que de alguna manera elimina la generalidad que debería de tener el modelo para poder tratar con él.
+En primer lugar es preciso explicar sobre que se parte a la hora de aplicar estos algoritmos que aprenden para clasificar. Los \textbf{datos} son representación simbólica de atributos o un conjunto de atributos, estos son la principal materia prima para el aprendizaje, sin ellos no sería posible realizar una predicción con mayor o menor seguridad de que la predicción es acertada. Los datos normalmente son divididos en dos conjuntos llamados \textbf{conjunto de test o prueba} y \textbf{conjunto de entrenamiento}, y lo que se busca con la aplicación de alguno de estos algoritmos es la creación de un modelo de clasificación que sea más general a partir de los datos obtenidos, para ello se hace uso de el algoritmo sobre el conjunto de entrenamiento para generar el modelo y luego se prueba sobre el conjunto de prueba. De aquí surge otra de los grandes problemas de los algoritmos de clasificación el \textbf{sobreajuste} o sobreentrenamiento, se produce cuando un modelo se ajusta muy bien al conjunto de datos que usamos para entrenar y que de alguna manera elimina la generalidad que debería de tener el modelo para poder tratar con él.
 
-Con esta breve introducción vamos a repasar algunos de sus algoritmos más importantes han surgido a lo largo del tiempo y han sido un referente para algoritmos posteriores.  
+La importancia de estos conjuntos de entrenamiento y prueba es notoria, normalmente el conjunto de entrenamiento es usado para descubir relaciones en los datos que posteriormente nos puedan servir para predecir, y el conjunto de prueba es se usa para evaluar el ajuste que dichas relaciones tienen sobre otros datos. Se buscan muchas formas de evitar el sobreajuste, para ello se introducen las técnicas de validación. La validación es un conjunto de técnicas que se aplican normalmente antes de evaluar el modelo obtenido con el aprendizaje sobre e conjunto de entrenamiento y sirve para obtener resultados que ilustren una hipotética relación entre los atributos. Una de las técnicas que más usan esto se llama validación cruzada, que consiste realizar k particiones del mismo tamaño que se usaran para aprender y evaluar de forma independiente en cada caso para finalmente realizar aplicar una media aritmética sobre las aproximaciones obtenidas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.52\textwidth]{overfitting}
+\caption{Ejemplo de sobreajuste}
+\label{Ejemplo de sobreajuste}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.52\textwidth]{xv_folds}
+\caption{Validación cruzada}
+\label{Validación cruzada}
+\end{figure}
+Con esta breve introducción vamos a repasar algunos de sus algoritmos más importantes han surgido a lo largo del tiempo y han sido un referente para algoritmos posteriores.
 
 \subsection{Perceptron}
 Una de las características más significativas de las redes neuronales es su capacidad para aprender a partir de alguna fuente de información interactuando con su entorno.
@@ -356,7 +369,7 @@ Es decir, supongamos la función  de clasificación $f$ en $\mathbb{R}^n$ tal qu
 \[
 f(x_1, x_2, ..., x_N) = \left\{ \begin{array}{lcc}
              1 &   si  & w_1x_1 + w_2x_2 + ... + w_Nx_N \geq \theta \\
-             \\ -1 &  si  &  w_1x_1 + w_2x_2 + ... + w_Nx_N < \theta 
+             \\ -1 &  si  &  w_1x_1 + w_2x_2 + ... + w_Nx_N < \theta
              \end{array}
    \right.
 \]
@@ -372,7 +385,7 @@ donde la función signo es:
 \[
 sign(x_1, x_2, ..., x_N) = \left\{ \begin{array}{lcc}
              1 &   si  & x \geq 0 \\
-             \\ -1 &  si  &  x < 0 
+             \\ -1 &  si  &  x < 0
              \end{array}
    \right.
 \]
@@ -398,7 +411,7 @@ El algoritmo de aprendizaje del perceptrón consiste en lo siguiente:
 \caption{Ejemplo Perceptrón}
 \label{Ejemplo Perceptron}
 \end{figure}
- 
+
 \subsection{Nearest Neighbor}
 El algoritmo de clasificación \textbf{K-Nearest Neighbour (k-NN)} o \textbf{K-Vecino más Cercano} es uno de los métodos de clasificación más fundamentales y sencillos, y debería ser una de las primeras opciones para un estudio de clasificación cuando hay poco o ningún conocimiento previo sobre la distribución de los datos.
 
@@ -469,7 +482,7 @@ El algoritmo construye árboles de decisión de la misma manera que lo hace el a
 \item \textbf{Algoritmo Random Forest:} Recientemente en el año \textbf{1995}, \textbf{Tinkam Ho} un analista de datos publica un documento en el que se describía este algoritmo, este algoritmo trata de construir un conjunto de árboles de decisión. Haciendo uso de un conjunto de entrenamiento hacemos que se construya un conjunto de árboles de decisión en el que dada una entrada, que puede ser una nueva instancia, esta se clasifica por todos los árboles del conjunto y se predice a que clase esta instancia pertenece en función de la mayoría de los resultados de la clasificación anterior, es decir si hay 3 árboles de decisión y 2 dicen que pertenece a el conjunto de instancias mal clasificadas entonces ese será su valor de clase.
 \end{itemize}
 \subsubsection{Support Vector Machine}
-El algoritmo \textbf{support vector machine} o SVM son un conjunto de \textbf{técnicas de aprendizaje supervisado} desarrollados por publicado en un documento en el año \textbf{1995} en el que trabajaron \textbf{Corinna Cortes} y \textbf{Vladimir Vapnik}, es un método que dado un conjunto de entrenamiento construye un modelo que servirá para realizar predicciones sobre un conjunto de instancias o una muestra del mismo tipo. Es un modelo que representa las instancias en el espacio separando las clases lo máximo haciendo uso de un hiperplano o un conjunto de hiperplanos dependiendo de la dimensionalidad de los atributos del conjunto de datos la idea es que estos  separen de forma óptima las clases. Este algoritmo puede ser usado tanto en problemas de regresión como en problemas de clasificación. 
+El algoritmo \textbf{support vector machine} o SVM son un conjunto de \textbf{técnicas de aprendizaje supervisado} desarrollados por publicado en un documento en el año \textbf{1995} en el que trabajaron \textbf{Corinna Cortes} y \textbf{Vladimir Vapnik}, es un método que dado un conjunto de entrenamiento construye un modelo que servirá para realizar predicciones sobre un conjunto de instancias o una muestra del mismo tipo. Es un modelo que representa las instancias en el espacio separando las clases lo máximo haciendo uso de un hiperplano o un conjunto de hiperplanos dependiendo de la dimensionalidad de los atributos del conjunto de datos la idea es que estos  separen de forma óptima las clases. Este algoritmo puede ser usado tanto en problemas de regresión como en problemas de clasificación.
 
 Este algoritmo pertenece a la familia de clasificadores lineales, es decir, algoritmos que tratan de clasificar una instancia basándose en valores de una combinación lineal de sus atributos.
 
@@ -509,7 +522,7 @@ En el año \textbf{2015 Google DeepMind} de Londres desarrolla un programa de or
 El \textbf{Stanford Cart} nació de una investigación para controlar un Moon Rover desde la Tierra. Fue construido en \textbf{1960} por un estudiante, \textbf{James L. Adams}, quien había estado trabajando en un proyecto de la NASA que pretendía que alguien desde la Tierra pudiese conducir alrededor de la Luna usando una cámara de vídeo en el vehículo.
 Adams se centró en estudiar la controlabilidad del vehículo con varias configuraciones de la velocidad de comunicación. Demostró que con un retardo de comunicación correspondiente al viaje de ida y vuelta a la Luna (aproximadamente 2.5 segundos), el vehículo no podía ser controlado de manera fiable si viajaba a más de 0.3 km/h.
 
-En \textbf{1962} otro estudiante, \textbf{Paul W. Braisted}, ideó un esquema para mejorar la controlabilidad del vehículo agregando una computadora que funcionaba como un predictor que tomaba en cuenta comandos de dirección anteriores y dibujaba un punto en la pantalla de televisión que indicaba la localización cuando una orden se llevara a cabo. Con esta mejora el vehículo podría ser controlado a 8 km/h. 
+En \textbf{1962} otro estudiante, \textbf{Paul W. Braisted}, ideó un esquema para mejorar la controlabilidad del vehículo agregando una computadora que funcionaba como un predictor que tomaba en cuenta comandos de dirección anteriores y dibujaba un punto en la pantalla de televisión que indicaba la localización cuando una orden se llevara a cabo. Con esta mejora el vehículo podría ser controlado a 8 km/h.
 
 En \textbf{1969}, \textbf{Lester Earnest} intentó construir un vehículo de carretera auto-dirigido basado en el aporte visual. Earnest tenía en mente tratar de conducir por la carretera circular que rodea la instalación de SAIL usando la línea central del camino y otras referencias visuales. Sin embargo sabía que el carro no podría llevar una computadora bastante grande para hacer eso, así que planeó utilizar un transmisor en el carro para enviar imágenes de la cámara de la TV a la computadora y otro enlace de radio para enviar órdenes de guía de la computadora al carro. Las operaciones experimentales comenzaron con un operador humano que controlaba el carro a través de la computadora usando imágenes de televisión. Utilizando el procesador KL10 entonces disponible, que funcionaba a unos 2,5 MIPS, \textbf{Hans Moravec} fue capaz de usar la visión multi-ocular para navegar lentamente alrededor de los obstáculos en un ambiente interior.
 En \textbf{1979}, el carro cruzó con éxito una sala llena de sillas sin intervención humana en unas cinco horas.
@@ -533,6 +546,188 @@ Las células C, se insertan en la red para permitir errores de posición en las 
 	\label{Estructura del neocognitron.}
 \end{figure}
 
+\section{Otras técnicas de aprendizaje}
+
+\subsection{Colonias de hormigas}
+El algoritmo de la colonia de hormigas es una técnica probabilística para solucionar problemas computacionales que pueden reducirse a buscar los mejores caminos o rutas en grafos.
+
+Inicialmente fue propuesto por \textbf{Marco Dorigo} en \textbf{1992}, en su tesis de doctorado.
+
+Dicho algoritmo surgió como método para buscar el camino óptimo en un grafo, basado en el comportamiento de las hormigas cuando estas están buscando un camino entre la colonia y una fuente de alimentos.
+
+\textbf{¿Cómo funciona este algoritmo?} En nuestro mundo natural, las hormigas (inicialmente) vagan de manera aleatoria, al azar, y una vez han encontrado la comida regresan a su colonia dejando un rastro de feromonas. Si otras hormigas encuentran dicho rastro, es probable que estas no sigan caminando aleatoriamente y empiecen a seguir el rastro de feromonas dejado por las anteriores hormigas y reforzándolo si estas encuentran comida finalmente. Sin embargo, con el paso del tiempo, el rastro de feromonas comienza a evaporarse, reduciéndose así su fuerza de atracción.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{Hormigas.png}
+\caption{Colonias de hormigas}
+\label{Colonias de hormigas}
+\end{figure}
+
+La idea original de este algoritmo proviene de la observación de la explotación de los recursos alimentarios entre hormigas, en el que las habilidades cognitivas de las hormigas son individualmente limitadas (son ciegas) pero en conjunto son capaces de buscar el menor camino existente entre la fuente de comida y su hormiguero o colonia:
+
+\begin{enumerate}
+    \item La primera hormiga encuentra la fuente de alimentos $(F)$ a través de cualquier camino $(a)$, entonces retorna a la colonia $(N)$, dejando tras ella un rastro de feromonas.
+    \item Las demás hormigas aleatoriamente siguen cuatro caminos posibles, pero el fortalecimiento de la pista hace más atractiva la ruta más corta. Por lo tanto, las hormigas van tomando la ruta más corta y largas porciones de otras rutas empiezan a perder su rastro de feromonas.
+\end{enumerate}
+
+
+
+
+
+\subsection{Algoritmos genéticos}
+Los algoritmos genéticos son una técnica de búsqueda basada en la teoría de la evolución de Darwin. Esta técnica se basa en los mecanismos de selección que utiliza la naturaleza, de acuerdo a los cuales los individuos más aptos de una población son los que sobreviven, al adaptarse más fácilmente a los cambios que se producen en su entorno.
+
+Hoy en día se sabe que estos cambios se efectúan en los genes de un individuo, y que sus atributos más deseables (los que le permiten adaptarse mejor a su entorno) se transmiten a sus descendientes cuando éste se reproduce sexualmente.
+
+Este algoritmo fue desarrollado por un investigador de la Universidad de Michigan, llamado John Holland. Holland era consciente de la importancia de la selección natural, y a fines de los 60s desarrolló una técnica que se pudo incorporar a un programa informático. Su objetivo era lograr que las computadoras aprendieran por sí mismas. A la técnica que inventó Holland se le llamó originalmente \textbf{``planes reproductivos''}, pero se hizo popular bajo el nombre de \textbf{algoritmo genético} tras la publicación de su libro en 1975.
+
+\textbf{¿En qué consiste un algoritmo genético?} Un algoritmo genético consiste en una función matemática o una rutina de software que toma como entradas a los individuos y retorna como salidas cuáles de ellos deben generar descendencia para la nueva generación.
+
+Se supone que los individuos (posibles soluciones del problema), pueden representarse como un conjunto de parámetros (que denominaremos \textit{genes}), los cuales agrupados forman una cadena de valores (a menudo referida como \textit{cromosoma}). El alfabeto utilizado para representar los individuos puede ser cualquiera, aunque el más usual es el constituido por el $\{0, 1\}$.
+
+La \textit{función de adaptación} debe ser diseñada para cada problema de manera específica. Dado un
+cromosoma particular, la función de adaptación le asigna un número real, que refleja el
+nivel de adaptación al problema del individuo representado por el cromosoma.
+
+Durante la \textit{fase reproductiva} se seleccionan los individuos de la población para cruzarse y producir descendientes, que constituirán, una vez mutados, la siguiente generación de individuos.
+
+La \textit{selección de padres} se efectúa al azar usando un procedimiento que favorezca a los individuos mejor
+adaptados, ya que a cada individuo se le asigna una probabilidad de ser seleccionado que es proporcional a su función de adaptación. Según dicho esquema, los individuos bien adaptados se escogerán probablemente varias veces por generación, mientras que los peor adaptados al problema, no se escogerán más que de vez en
+cuando.
+
+Una vez seleccionados dos padres, sus cromosomas se combinan, utilizando habitualmente los \textit{operadores
+de cruce} y \textit{mutación}:
+
+\begin{itemize}
+    \item \textbf{Operador de cruce:} coge dos padres seleccionados y corta sus cadenas de cromosomas en una posición escogida al azar, para producir dos subcadenas iniciales y dos subcadenas finales. Después se intercambian las subcadenas finales, produciéndose dos nuevos cromosomas completos. Ambos descendientes heredan genes de cada uno de los padres.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OperadorCruce.PNG}
+\caption{Operador de Cruce}
+\label{Operador de Cruce}
+\end{figure}
+
+    \item \textbf{Operador de mutación:} se aplica a cada hijo de manera individual, y consiste en la alteración aleatoria (normalmente con probabilidad pequeña) de cada gen componente del cromosoma.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{OperadorMutacion.PNG}
+\caption{Operador de Mutacion (5º gen del cromosoma)}
+\label{Operador de Mutacion}
+\end{figure}
+\end{itemize}
+
+Si el Algoritmo Genético ha sido correctamente implementado, la población evolucionará a lo largo de las sucesivas generaciones de tal manera que la adaptación
+media de todos los individuos de la población, así como la adaptación del mejor individuo
+se irán incrementando hacia el óptimo global.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{Adaptacion.PNG}
+\caption{Adaptación Media y Mejor Adaptación}
+\label{Adaptación Media y Mejor Adaptación}
+\end{figure}
+
+A medida que el número de generaciones aumenta, es más probable que la
+adaptación media se aproxime a la del mejor individuo.
+
+
+
+\subsection{Clustering}
+Clustering es una técnica de minería de datos (data mining) dentro de la disciplina de Inteligencia Artificial que identifica de forma automática agrupaciones o clústeres de elementos de acuerdo a una medida de similitud entre ellos.
+
+El objetivo fundamental de las técnicas de clustering consiste en identificar grupos o clústeres de elementos tal que la similitud media entre elementos del \underline{mismo} clúster sea alta o la similitud media entre elementos de \underline{distintos} clústeres sea baja.
+
+La identificación de clústeres o grupos de elementos se basa en una medida de similitud. Diferentes medidas de similitud dan lugar a diferentes clústeres.
+
+Por ejemplo, dado el siguiente grupo individuos:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{GrupoSimpson.PNG}
+\caption{Grupo de Individuos}
+\label{Grupo de Individuos}
+\end{figure}
+
+Podemos hacer, por ejemplo, los siguientes dos tipos de agrupaciones:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{Agrupacion1.PNG}
+\caption{Agrupacion 1: Similitud Familia/Trabajo}
+\label{Similitud Familia/Trabajo}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{Agrupacion2.PNG}
+\caption{Agrupacion 2: Similitud Sexo}
+\label{Similitud Sexo}
+\end{figure}
+
+Existen principalmente dos tipos diferentes de técnicas de clustering:
+
+\begin{enumerate}
+    \item \textbf{Clústering Jerárquico:}  construye un árbol que representa las relaciones de similitud entre los distintos elementos. Como la exploración de todos los posibles árboles es computacionalmente intratable, suelen seguirse algoritmos aproximados guiados por determinadas heurísticas.
+
+    Existen dos aproximaciones diferentes al clustering jerárquico:
+    \begin{itemize}
+        \item \textbf{Clústering jerárquico aglomerativo:} se comienza con tantos clústeres como individuos haya y consiste en ir formando (aglomerando) grupos según su similitud.
+        \item \textbf{Clústering jerárquico de división:} se comienza con un único clúster y consiste en ir dividiendo clústeres según la similitud entre sus componentes.
+    \end{itemize}
+
+En el clústering jerárquico no es necesario especificar el número de clústeres a priori, es posible seleccionarlo a posteriori según un umbral de corte. La estructura jerárquica es cercana a la intuición humana.
+
+La principal desventaja consiste en la acumulación de errores. Es decir, los errores que se comenten en un paso de agrupamiento se propagan durante el resto de la construcción del árbol sin ser posible su reajuste. \\
+
+
+
+
+
+
+    \item \textbf{Clústering de Partición:}
+    esta técnica de clústering realiza una distribución de los elementos entre un número prefijado de clústeres o grupos.
+
+    Como ejemplo y algoritmo más conocido de esta técnica, hay que destacar el algoritmo K-means.
+
+    \textbf{El algoritmo K-means} es un método de agrupamiento creado por MacQueen en el año 1967, que tiene como objetivo la partición de un conjunto $N$ en $k$ grupos en el que cada observación pertenece al grupo más cercano a la media.
+
+    Dados $k$ clústeres conocidos, cada uno de ellos tiene asociado un centroide (centro geométrico del cluster).
+
+    Los diferentes $N$ puntos  se asignan al cluster cuyo centroide esté más cerca (utilizando cualquier métrica de distancia). Iterativamente, se van actualizando los centroides en función de las asignaciones de puntos a clusters, hasta que los centroides dejen de cambiar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Iteraciones1a3.PNG}
+\caption{Iteraciones K-Means 1, 2 y 3}
+\label{Iteraciones K-Means 1, 2 y 3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{Iteraciones4a6.PNG}
+\caption{Iteraciones K-Means 4, 5 y 6}
+\label{Iteraciones K-Means 4, 5 y 6}
+\end{figure}
+
+
+El algoritmo, más específicamente, es:
+\begin{itemize}
+    \item \textbf{Inicialización:}
+    \begin{itemize}
+        \item Escoger $k$ centroides aleatoriamente.
+        \item Formar $k$ grupos, asignando cada punto al centroide más cercano.
+    \end{itemize}
+    \item \textbf{Proceso iterativo:}  Mientras que los centroides cambien:
+    \begin{itemize}
+        \item Calcular las distancias de todos los puntos a los $k$ centroides.
+        \item Formar $k$ grupos, asignando cada punto al centroide más cercano.
+        \item Recalcular los nuevos centroides.
+    \end{itemize}
+\end{itemize}
+\end{enumerate}
 
 \begin{thebibliography}{9}
 
@@ -542,7 +737,7 @@ Las células C, se insertan en la red para permitir errores de posición en las 
 \bibitem{articulointro}
  	\textbf{Introducción},
  \url{http://cleverdata.io/que-es-machine-learning-big-data/}
- 
+
  \bibitem{conceptosbasicos}
  	\textbf{Introducción},
  \url{ftp://decsai.ugr.es/pub/usuarios/castro/Actividades/Redes-Neuronales/Apuntes/Apuntes%20Javier%20Rodriguez%20Blazquez/Conceptos%20basicos.pdf}
@@ -556,79 +751,79 @@ Las células C, se insertan en la red para permitir errores de posición en las 
 \bibitem{standford1}
 	\textbf{Neural Networks},
   \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history2.html}
- 
+
  \bibitem{standford2}
  	\textbf{Neural Networks},
  \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/History/history1.html}
- 
+
  \bibitem{wikiNN1}
  	\textbf{Neural Networks},
  \url{https://en.wikipedia.org/wiki/Artificial_neural_network}
- 
+
  \bibitem{marvinminsky}
  	\textbf{Neural Networks},
  \url{https://en.wikipedia.org/wiki/Marvin_Minsky}
- 
+
  \bibitem{historiademachinelearning}
  	\textbf{Perceptrón},
  \url{http://sge.wonderville.ca/machinelearning/history/history.html}
- 
+
  \bibitem{perceptron1}
  	\textbf{Perceptrón},
  \url{http://www.lcc.uma.es/~jmortiz/archivos/Tema4.pdf}
- 
+
  \bibitem{perceptron2}
  	\textbf{Perceptrón},
  \url{ftp://decsai.ugr.es/pub/usuarios/castro/Actividades/Redes-Neuronales/Apuntes/Apuntes%20Javier%20Rodriguez%20Blazquez/Redes%20de%20una%20capa.pdf}
- 
+
   \bibitem{neighbour1}
  	\textbf{Nearest Neighbour},
  \url{http://sge.wonderville.ca/machinelearning/history/history.html}
- 
+
  \bibitem{neighbour2}
  	\textbf{Nearest Neighbour},
  \url{http://www.synergicpartners.com/una-breve-historia-del-machine-learning/}
- 
+
  \bibitem{neighbour3}
  	\textbf{Nearest Neighbour},
  \url{http://www.scholarpedia.org/article/K-nearest_neighbor}
- 
+
  \bibitem{neighbour4}
  	\textbf{Nearest Neighbour},
  \url{http://todobi.blogspot.com.es/2016/02/una-breve-historia-del-machine-learning.html}
- 
+
  \bibitem{neighbour5}
  	\textbf{Nearest Neighbour},
  \url{https://prezi.com/0oyoj6v-eycs/algoritmo-knn/}
- 
+
  \bibitem{neighbour6}
  	\textbf{Nearest Neighbour},
  \url{https://www.ecured.cu/Regla_de_los_K_vecinos_m%C3%A1s_cercanos}
- 
+
  \bibitem{neighbour7}
  	\textbf{Nearest Neighbour},
  \url{https://prezi.com/lzilzh3g8xvf/algoritmo-de-los-k-vecinos-mas-proximos/}
- 
+
   \bibitem{turing1}
  	\textbf{Máquina de aprendizaje de Turing},
  \url{https://hipertextual.com/2011/10/inteligencia-artificial-test-de-turing}
- 
+
  \bibitem{turing2}
  	\textbf{Máquina de aprendizaje de Turing},
  \url{http://matap.dmae.upm.es/cienciaficcion/DIVULGACION/3/TestTuring.htm}
- 
+
  \bibitem{turing3}
  	\textbf{Máquina de aprendizaje de Turing},
  \url{https://es.wikipedia.org/wiki/Test_de_Turing}
- 
+
  \bibitem{turing4}
  	\textbf{Máquina de aprendizaje de Turing},
  \url{http://xamanek.izt.uam.mx/map/cursos/Turing-Pensar.pdf}
- 
+
  \bibitem{turing5}
  	\textbf{Máquina de aprendizaje de Turing},
  \url{http://enciclopedia.us.es/index.php/Prueba_de_Turing}
- 
+
     \bibitem{stanford}
     \textbf{Stanford Cart},
     \url{http://web.stanford.edu/~learnest/sail/cart.htm}
@@ -638,5 +833,37 @@ Las células C, se insertan en la red para permitir errores de posición en las 
  \bibitem{neocognitron2}
  \textbf{Neocognitron},
  \url{http://www.scholarpedia.org/article/Neocognitron}
+
+ \bibitem{Hormigas1}
+	 \textbf{Colonias de Hormigas},
+ \url{https://es.wikipedia.org/wiki/Algoritmo_de_la_colonia_de_hormigas}
+
+ \bibitem{Hormigas2}
+	 \textbf{Colonias de Hormigas},
+ \url{http://www.cs.us.es/~fsancho/?e=71}
+
+ \bibitem{Geneticos1}
+	 \textbf{Algoritmos Genéticos},
+ \url{http://www.sc.ehu.es/ccwbayes/docencia/mmcc/docs/temageneticos.pdf}
+
+ \bibitem{Geneticos2}
+	 \textbf{Algoritmos Genéticos},
+ \url{http://www.uv.es/asepuma/X/J24C.pdf}
+
+ \bibitem{K-means1}
+	 \textbf{K-means},
+ \url{https://www.cs.us.es/~fran/curso_unia/clustering.html}
+
+ \bibitem{K-means2}
+	 \textbf{K-means},
+ \url{http://www.sc.ehu.es/jiwdocoj/remis/docs/GarreAdis05.pdf}
+
+ \bibitem{K-means3}
+	 \textbf{K-means},
+ \url{http://elvex.ugr.es/idbis/dm/slides/41%20Clustering%20-%20Partitional.pdf}
+
+ \bibitem{K-means4}
+	 \textbf{K-means},
+ \url{https://prezi.com/1b3laud8egcx/clustering-k-means-k-medoids/}
 \end{thebibliography}
 \end{document}
