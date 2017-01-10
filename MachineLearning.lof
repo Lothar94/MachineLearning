@@ -3,11 +3,22 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Ejemplo de una predicci\IeC {\'o}n simplificada basada en datos de una compa\IeC {\~n}\IeC {\'\i }a de telefon\IeC {\'\i }a ficticia, pero usando una herramienta de Machine Learning real}}{4}{figure.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Teorema de Bayes}}{5}{figure.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Test de Turing}}{7}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Fotoperceptron}}{11}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Estructura Perceptron}}{12}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Ejemplo Perceptr\IeC {\'o}n}}{13}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Ejemplo kNN}}{15}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Arthur Samuel jugando a las damas}}{16}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces M\IeC {\'a}quina Deep Blue de IBM}}{17}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Stanford Cart}}{19}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Estructura del neocognitron.}}{20}{figure.11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Ejemplo de sobreajuste}}{10}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Ejemplo validaci\IeC {\'o}n cruzada}}{11}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Fotoperceptron}}{12}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Estructura perceptr\IeC {\'o}n}}{13}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Ejemplo Perceptr\IeC {\'o}n}}{14}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Ejemplo kNN}}{16}{figure.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Arthur Samuel jugando a las damas}}{17}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces M\IeC {\'a}quina Deep Blue de IBM}}{18}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Stanford Cart}}{20}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Estructura del neocognitr\IeC {\'o}n.}}{21}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Colonias de hormigas}}{21}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Operador de Cruce}}{23}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Operador de mutaci\IeC {\'o}n (5\IeC {\textordmasculine } gen del cromosoma)}}{23}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Adaptaci\IeC {\'o}n Media y Mejor Adaptaci\IeC {\'o}n}}{23}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Grupo de Individuos}}{24}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Agrupaci\IeC {\'o}n 1: Similitud Familia/Trabajo}}{24}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Agrupaci\IeC {\'o}n 2: Similitud Sexo}}{24}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Iteraciones K-Means 1, 2 y 3}}{25}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Iteraciones K-Means 4, 5 y 6}}{25}{figure.22}
