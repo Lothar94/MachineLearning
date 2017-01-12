@@ -269,38 +269,87 @@ sign(x_1, x_2, ..., x_N) = \left\{ \begin{array}{lcc}
 		\item \textbf{¿Cómo es su funcionamieto?}
 				\begin{figure}[H]
 		\includegraphics[scale=0.6]{ejemploKNN} 
-		\caption{Ejemplo de Validación cruzada}
+		\caption{Ejemplo de KNN}
 	\end{figure}
 			\end{itemize}
 		\end{frame}
 	\subsection{Árboles de decisión}
 		\begin{frame}
 		\frametitle{Árboles de decisión}
-		
+		Un \textbf{árbol de decisión}  es un algoritmo que se basa en la creación de un grafo dirigido donde los nodos son reglas sobre los atributos y las hojas del árbol son el atributo clase o sobre el que se va a clasificar.
+		Algunos de los algoritmos más reconocidos  que usan este modelo de aprendizaje son:
+		\begin{itemize}
+			\item \textbf{Algoritmo ID3 y C4.5}: Desarrollado por John Ross Quinlan en los años 60.
+			\item \textbf{Algoritmo Random Forest}: Desarrollado en 1995 por Tinkam Ho.
+		\end{itemize}
+						\begin{figure}[H]
+		\includegraphics[scale=0.35]{tree} 
+		\caption{Ejemplo de árbol de decisión}
+	\end{figure}
 		\end{frame}
 	\subsection{SVM}
 		\begin{frame}
-		\frametitle{SVM}
+		\frametitle{SVM (Support Vector Machine)}
+		\begin{itemize}
+				\item El \textbf{algoritmo SVM} es un conjunto de técnicas de aprendizaje supervisado desarrollados en el año 1995 por Corinna Cortes y Vladimir Vapnik.
+			\item La idea principal del método es la construcción de un hiperplano o conjunto de hiperplanos que separen de forma óptima las clases.
+		\end{itemize}
+						\begin{figure}[H]
+		\includegraphics[scale=0.6]{SVM} 
+		\caption{Ejemplo de Support Vector Machine}
+	\end{figure}
 		\end{frame}
-
-\section{Otras técnicas para el aprendizaje}
-	\begin{frame}
-	\frametitle{Otras técnicas para el aprendizaje}
-	\end{frame}
 
 	\subsection{Clustering}
 		\begin{frame}
 		\frametitle{Clustering}
+\begin{itemize}
+
+		\item[] El \textbf{clustering} es una técnica de aprendizaje no supervisado que identifica de forma automática agrupaciones o clústeres de elementos de acuerdo a una medida de similitud entre ellos. 
+		\item[] Existen principalmente dos tipos diferentes de técnicas de clustering:
+		\begin{itemize}
+		\item \textbf{Clústering Jerárquico}
+		\begin{itemize}
+		\item Clustering jerárquico aglomerativo
+		\item Clustering jerárquico de división
+		\end{itemize}
+		\item \textbf{Clústering de Partición}: K-means
+		\end{itemize}
+		
+\end{itemize}
+			\begin{figure}[H]
+		\includegraphics[scale=0.6]{Iteraciones1a3} 
+		\caption{Ejemplo de K-means}
+	\end{figure}
 		\end{frame}
 
 	\subsection{Algoritmos genéticos}
 		\begin{frame}
 		\frametitle{Algoritmos genéticos}
+				Los algoritmos genéticos son una técnica de búsqueda basada en la teoría de la evolución de Darwin. Fue desarrollado en 1975 por John Holland.\par
+				\medskip
+		La capacidad de aprendizaje del algoritmo radica en la evolución de los individuos de la población, es decir, a medida que ocurren cruces y mutaciones se va recopilando información relevante que se traslada generación a generación.\par
+\medskip		
+		Hay diferentes tipos de criterio de selección de soluciones:
+		\begin{itemize}
+			\item Modelo Generacional
+			\item Modelo Estacionario
+		\end{itemize}
+		Una aplicación directa de este algoritmo es sobre el problema denominado selección de características que pretende disminuir el espacio del conjunto de datos, es decir, reducir su número de atributos en base a patrones.
 		\end{frame}
 
 	\subsection{Colonias de hormigas}
 		\begin{frame}
 		\frametitle{Colonias de hormigas}
+		El algoritmo de la colonia de hormigas es una técnica probabilística para solucionar problemas computacionales que pueden reducirse a buscar los mejores caminos o rutas en grafos. Fue propuesto por Marco Dorigo en \textbf{1992}. \par
+		\medskip
+Dicho algoritmo está basado en el comportamiento de las hormigas cuando estas están buscando un camino entre la colonia y una fuente de alimentos.\par
+\medskip
+\textbf{¿Cómo funciona el método?}
+			\begin{figure}[H]
+		\includegraphics[scale=0.35]{Hormigas} 
+		\caption{Ejemplo de colonias de hormigas}
+	\end{figure}
 		\end{frame}
 
 \section{Máquinas y juegos}
